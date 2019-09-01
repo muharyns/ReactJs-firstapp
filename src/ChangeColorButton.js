@@ -5,15 +5,15 @@ class ChangeColorButton extends React.Component {
         super(props);
         this.handleClick = this.handleClick.bind(this);
       }
-handleClick() {
-    this.props.clickHandler();
-        console.log('clicked');
-}
-  render() {
-    return (
-      <button onClick={this.handleClick} >Change the color</button>
-    );
-  }
+      handleClick() {
+          this.props.onClick();
+          console.log('clicked');
+      }
+      render() {
+        return (
+          <button onClick={this.handleClick} >Change the color</button>
+        );
+      }
 } 
 
 export default ChangeColorButton;

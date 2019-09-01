@@ -13,14 +13,14 @@ class ColoredBlock extends React.Component {
         this.setState((prevState, props) => ({
             color: prevState.color === 'red' ? 'blue' : 'red'
           }));
-      }
-  render() {
-    return (
-        <div style={{height: '200px', width: '200px', backgroundColor: this.state.color}}>
-         <ChangeColorButton clickHandler={this.changeColor} currentColor={this.state.color}></ChangeColorButton>
-       </div>
-    )
-  }
+    }
+    render() {
+      return (
+          <div style={{height: '200px', width: '200px', backgroundColor: this.state.color}}>
+          <ChangeColorButton onClick={this.changeColor} ></ChangeColorButton>
+        </div>
+      )
+    }
 } 
 
 export default ColoredBlock;
